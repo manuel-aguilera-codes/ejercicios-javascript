@@ -50,6 +50,8 @@ const reiniciar = () => {
     minutos = 0;
     horas = 0;
     pantalla.textContent = "0" + horas + ":0" + minutos + ":0" + segundos;
+    clearInterval(intervalId);
+    intervalId = null;
 };
 
 botonIniciar.addEventListener("click", iniciar);
