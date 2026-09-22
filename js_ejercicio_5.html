@@ -1,33 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora Sencilla</title>
+    <title>Ejercicio 5 - Calculadora Sencilla</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Calculadora Sencilla</h1>
-      <a href="index.html">Volver</a>
-      <hr />
+      <h1>Ejercicio 5</h1>
+      <a href="index.html">← Volver</a>
     </header>
     <main>
+      <h2>Calculadora Sencilla</h2>
       <section>
-        <p>Ingrese el primer número:</p>
-        <input type="number" id="input-numero1" />
-        <p>Ingrese el segundo número:</p>
-        <input type="number" id="input-numero2" />
+        <label for="input-numero1">Primer número:</label>
+        <input type="number" id="input-numero1" placeholder="Ej: 10" />
+        
+        <label for="input-numero2">Segundo número:</label>
+        <input type="number" id="input-numero2" placeholder="Ej: 5" />
       </section>
-      <br />
+      
       <section>
-        <button id="boton-sumar">Sumar</button>
-        <button id="boton-restar">Restar</button>
-        <button id="boton-multiplicar">Multiplicar</button>
-        <button id="boton-dividir">Dividir</button>
+        <label>Operación:</label>
+        <div class="calc-buttons">
+          <button id="boton-sumar">➕ Sumar</button>
+          <button id="boton-restar">➖ Restar</button>
+          <button id="boton-multiplicar">✖️ Multiplicar</button>
+          <button id="boton-dividir">➗ Dividir</button>
+        </div>
       </section>
-      <section>
-        <p>Resultado:</p>
-        <p id="resultado"></p>
+      
+      <section style="margin-top: 1.5rem; text-align: center;">
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">Resultado:</p>
+        <div id="resultado">-</div>
       </section>
       <script src="js_ejercicio5.js"></script>
     </main>

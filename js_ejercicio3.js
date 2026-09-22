@@ -8,7 +8,19 @@ let botonAgregar = document.getElementById("boton-agregar");
 
 botonAgregar.addEventListener("click", function () {
   let texto = inputTexto.value;
+  if (!texto) return;
+
   let nuevoElemento = document.createElement("li");
   nuevoElemento.textContent = texto;
+
+  let botonEliminar = document.createElement("button");
+  botonEliminar.textContent = "x";
+
+  botonEliminar.addEventListener("click", function (event) {
+    event.target.parentElement.remove();
+  });
+
+  nuevoElemento.appendChild(botonEliminar);
   listaDinamica.appendChild(nuevoElemento);
+  inputTexto.value = "";
 });

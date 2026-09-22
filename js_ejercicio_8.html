@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Contador de palabras y caracteres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 8</h1>
+        <a href="index.html">← Volver</a>
+    </header>
+    <main>
+        <h2>Contador de Palabras y Caracteres</h2>
+        <p>Escribe en el campo de texto para ver las estadísticas en tiempo real.</p>
+        <section>
+            <form id="formulario">
+                <label for="texto">Tu texto:</label>
+                <textarea id="texto" name="texto" placeholder="Escribe o pega tu texto aquí..."></textarea>
+            </form>
+        </section>
+        <div class="stat-container">
+            <div class="stat-card">
+                <h4>Palabras</h4>
+                <p id="contador-palabras">0</p>
+            </div>
+            <div class="stat-card">
+                <h4>Caracteres (sin espacios)</h4>
+                <p id="contador-caracteres">0</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js_ejercicio8.js"></script>
+</body>
+
+</html>

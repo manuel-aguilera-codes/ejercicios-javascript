@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de contraseñas</title>
+    <title>Ejercicio 7 - Generador de contraseñas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Generador de contraseñas</h1>
-        <a href="index.html">Volver</a>
-        <hr>
+        <h1>Ejercicio 7</h1>
+        <a href="index.html">← Volver</a>
     </header>
     <main>
+        <h2>Generador de Contraseñas</h2>
+        <p>Crea contraseñas seguras con letras, números y símbolos.</p>
         <section>
             <form id="formulario">
-                <label for="longitud">Longitud de la contraseña:</label>
-                <input type="number" id="longitud" name="longitud">
-                <br>
-                <button type="submit">Generar contraseña</button>
+                <label for="longitud">Longitud de la contraseña (mínimo 4):</label>
+                <input type="number" id="longitud" name="longitud" min="4" placeholder="Ej: 12">
+                <button type="submit">🔑 Generar contraseña</button>
             </form>
         </section>
-        <div>
-            <h4 id="error-message"></h4>
-            <p id="password-title"></p>
+        <div style="margin-top: 1rem; text-align: center;">
+            <p id="error-message"></p>
+            <p id="password-title" style="font-weight: 600;"></p>
             <p id="new-password"></p>
         </div>
     </main>
 
-
     <script src="js_ejercicio7.js"></script>
-
 </body>
 
 </html>

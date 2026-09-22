@@ -1,24 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temporizador</title>
+  <title>Ejercicio 6 - Temporizador</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
     <h1>Ejercicio 6</h1>
-    <a href="index.html">Volver</a>
-    <hr />
+    <a href="index.html">← Volver</a>
   </header>
   <main>
+    <h2>Temporizador</h2>
+    <p>Controla el tiempo con los botones de acción.</p>
     <div id="pantalla">00:00:00</div>
-    <div>
-      <button id="iniciar">Iniciar</button>
-      <button id="pausar">Pausar</button>
-      <button id="reiniciar">Reiniciar</button>
+    <div class="button-group" style="justify-content: center;">
+      <button id="iniciar">▶ Iniciar</button>
+      <button id="pausar">⏸ Pausar</button>
+      <button id="reiniciar">🔄 Reiniciar</button>
     </div>
   </main>
   <script src="js_ejercicio6.js"></script>
